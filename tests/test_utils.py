@@ -123,6 +123,10 @@ class TestChineseZodiac:
 
         assert all(res)
 
+    def test_buffalo(self):
+        years = [1997, 1985, 1973, 1961, 2009, 2021]
+        self.run_test('buffalo', years)
+
     def test_rat(self):
         years = [1996, 1984, 1972, 1960, 2008, 2020]
         self.run_test('rat', years)

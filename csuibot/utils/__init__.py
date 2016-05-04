@@ -23,6 +23,7 @@ def lookup_chinese_zodiac(year):
     num_zodiacs = 12
     zodiacs = {
         0: 'rat',
+        1: 'buffalo',
         4: 'dragon',
         5: 'snake',
         7: 'goat'
