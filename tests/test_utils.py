@@ -19,6 +19,22 @@ class TestZodiac:
         res = utils.lookup_zodiac(11, 17)
         assert res != 'aries'
 
+    def test_aquarius_lower_bound(self):
+        res = utils.lookup_zodiac(1, 20)
+        assert res == 'aquarius'
+
+    def test_aquarius_upper_bound(self):
+        res = utils.lookup_zodiac(2, 18)
+        assert res == 'aquarius'
+
+    def test_aquarius_in_between(self):
+        res = utils.lookup_zodiac(2, 2)
+        assert res == 'aquarius'
+
+    def test_not_aquarius(self):
+        res = utils.lookup_zodiac(11, 17)
+        assert res != 'aquarius'
+
 
 class TestChineseZodiac:
 
