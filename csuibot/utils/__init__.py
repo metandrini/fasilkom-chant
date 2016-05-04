@@ -4,7 +4,8 @@ from csuibot.utils import zodiac as z
 def lookup_zodiac(month, day):
     zodiacs = [
         z.Aries(),
-        z.Leo()
+        z.Leo(),
+        z.Sagittarius()
     ]
 
     for zodiac in zodiacs:

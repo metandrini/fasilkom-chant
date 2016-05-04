@@ -35,6 +35,22 @@ class TestZodiac:
         res = utils.lookup_zodiac(11, 17)
         assert res != 'leo'
 
+    def test_sagittarius_lower_bound(self):
+        res = utils.lookup_zodiac(11, 22)
+        assert res == 'sagittarius'
+
+    def test_sagittarius_upper_bound(self):
+        res = utils.lookup_zodiac(12, 21)
+        assert res == 'sagittarius'
+
+    def test_sagittarius_in_between(self):
+        res = utils.lookup_zodiac(12, 12)
+        assert res == 'sagittarius'
+
+    def test_not_sagittarius(self):
+        res = utils.lookup_zodiac(11, 17)
+        assert res != 'sagittarius'
+
 
 class TestChineseZodiac:
 
