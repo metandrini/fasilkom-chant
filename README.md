@@ -14,7 +14,7 @@ More detailed information can be found [here](https://core.telegram.org/bots/api
 
 ### How to set up your machine
 
-1. Setup your Python virtual environment using [venv](https://docs.python.org/3/library/venv.html) as you did in week 8 tutorial. If you use PyCharm, you may want to configure it to recognize your virtual environment too.
+1. Setup your Python virtual environment using [venv](https://docs.python.org/3/library/venv.html) as you did in week 8 tutorial. Name your virtual environment folder as `env`. If you use PyCharm, you may want to configure it to recognize your virtual environment too.
 
 1. Navigate to the directory where you've cloned this repo and create a virtual environment under the `env` directory. Then, activate the virtual environment.
 
