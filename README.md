@@ -113,7 +113,7 @@ If you want to write new features to CSUIBot or fix bugs, that's great! Here is 
     git rebase -i origin/master
     ```
 
-    You can pick, fix up, squash, or reorder the commits, or anything in any way you like. If necessary, rewrite the commit message to a more meaningful one.
+    Squash all your commits into one commit only and rewrite the commit message into a meaningful one, preferably mentioning what feature/bugfix your changes introduce.
 
 1. Force-push your feature branch to origin:
 
