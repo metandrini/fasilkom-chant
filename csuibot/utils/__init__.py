@@ -18,7 +18,11 @@ def lookup_zodiac(month, day):
 def lookup_chinese_zodiac(year):
     num_zodiacs = 12
     zodiacs = [
-        'rat'
+        'rat',
+        'other zodiac',
+        'other zodiac',
+        'other zodiac',
+        'dragon'
     ]
     ix = (year - 4) % num_zodiacs
 
