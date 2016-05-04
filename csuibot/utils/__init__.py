@@ -24,8 +24,10 @@ def lookup_chinese_zodiac(year):
     zodiacs = {
         0: 'rat',
         4: 'dragon',
-        5: 'snake'
-        }
+        5: 'snake',
+        7: 'goat'
+    }
+
     ix = (year - 4) % num_zodiacs
 
     try:
