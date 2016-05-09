@@ -83,6 +83,22 @@ class TestZodiac:
         res = utils.lookup_zodiac(11, 17)
         assert res != 'gemini'
 
+    def test_cancer_lower_bound(self):
+        res = utils.lookup_zodiac(6, 21)
+        assert res == 'cancer'
+
+    def test_cancer_upper_bound(self):
+        res = utils.lookup_zodiac(7, 19)
+        assert res == 'cancer'
+
+    def test_cancer_in_between(self):
+        res = utils.lookup_zodiac(7, 1)
+        assert res == 'cancer'
+
+    def test_not_cancer(self):
+        res = utils.lookup_zodiac(11, 17)
+        assert res != 'cancer'
+
 
 class TestChineseZodiac:
 
