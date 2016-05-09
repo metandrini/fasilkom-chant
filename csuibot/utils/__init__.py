@@ -5,7 +5,8 @@ def lookup_zodiac(month, day):
     zodiacs = [
         z.Aries(),
         z.Leo(),
-        z.Sagittarius()
+        z.Sagittarius(),
+        z.Aquarius()
     ]
 
     for zodiac in zodiacs:
