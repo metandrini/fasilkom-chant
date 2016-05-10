@@ -19,16 +19,14 @@ def lookup_zodiac(month, day):
 
 def lookup_chinese_zodiac(year):
     num_zodiacs = 12
-    zodiacs = [
-        'rat',
-        'other zodiac',
-        'other zodiac',
-        'other zodiac',
-        'dragon'
-    ]
+    zodiacs = {
+        0: 'rat',
+        4: 'dragon',
+        5: 'snake'
+        }
     ix = (year - 4) % num_zodiacs
 
     try:
         return zodiacs[ix]
-    except IndexError:
+    except KeyError:
         return 'Unknown zodiac'

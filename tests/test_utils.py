@@ -131,6 +131,10 @@ class TestChineseZodiac:
         years = [2000, 1988, 1976, 1964, 2012, 2024]
         self.run_test('dragon', years)
 
+    def test_snake(self):
+        years = [2001, 1989, 1977, 1965, 2013, 2025]
+        self.run_test('snake', years)
+
     def test_unknown_zodiac(self):
         years = [2005, 1993, 1981, 1969, 2017, 2029]
         self.run_test('Unknown zodiac', years)
