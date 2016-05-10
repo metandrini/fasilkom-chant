@@ -99,6 +99,22 @@ class TestZodiac:
         res = utils.lookup_zodiac(11, 17)
         assert res != 'cancer'
 
+    def test_scorpio_lower_bound(self):
+        res = utils.lookup_zodiac(10, 23)
+        assert res == 'scorpio'
+
+    def test_scorpio_upper_bound(self):
+        res = utils.lookup_zodiac(11, 21)
+        assert res == 'scorpio'
+
+    def test_scorpio_in_between(self):
+        res = utils.lookup_zodiac(11, 11)
+        assert res == 'scorpio'
+
+    def test_not_scorpio(self):
+        res = utils.lookup_zodiac(11, 27)
+        assert res != 'scorpio'
+
 
 class TestChineseZodiac:
 

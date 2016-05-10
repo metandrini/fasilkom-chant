@@ -8,7 +8,8 @@ def lookup_zodiac(month, day):
         z.Sagittarius(),
         z.Aquarius(),
         z.Gemini(),
-        z.Cancer()
+        z.Cancer(),
+        z.Scorpio()
     ]
 
     for zodiac in zodiacs:
