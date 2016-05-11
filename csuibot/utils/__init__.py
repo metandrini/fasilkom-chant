@@ -15,6 +15,8 @@ def lookup_zodiac(month, day):
     for zodiac in zodiacs:
         if zodiac.date_includes(month, day):
             return zodiac.name
+    else:
+        return 'Unknown zodiac'
 
 
 def lookup_chinese_zodiac(year):
