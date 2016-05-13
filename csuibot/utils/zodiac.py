@@ -162,8 +162,3 @@ class Antonym(Dict):
         self.name = "antonym"
         self.mean = self.dictionary.antonym(word)
         self.lookup()
-
-a = Definition("school").lookup()
-b = Synonym("sleepy").lookup()
-print(a)
-print(b)
