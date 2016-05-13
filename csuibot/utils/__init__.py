@@ -36,3 +36,15 @@ def lookup_chinese_zodiac(year):
         return zodiacs[ix]
     except KeyError:
         return 'Unknown zodiac'
+
+
+def lookup_word(action, word):
+    searches = [
+        z.Definition(word),
+        z.Synonym(word),
+        z.Antonym(word)
+    ]
+
+    for search in searches:
+        if search.name == action:
+            return search.lookup()
