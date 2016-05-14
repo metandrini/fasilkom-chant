@@ -1,4 +1,5 @@
 from csuibot.utils import zodiac as z
+from csuibot.utils import word as w
 
 
 def lookup_zodiac(month, day):
@@ -40,9 +41,9 @@ def lookup_chinese_zodiac(year):
 
 def lookup_word(action, word):
     searches = [
-        z.Definition(word),
-        z.Synonym(word),
-        z.Antonym(word)
+        w.Definition(word),
+        w.Synonym(word),
+        w.Antonym(word)
     ]
 
     for search in searches:
