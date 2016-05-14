@@ -170,10 +170,22 @@ class TestWord:
         res = "Adjective\n1."
         assert res in utils.lookup_word("definition", "sleepy")
 
+    def test_not_definition(self):
+        res = "Invalid word"
+        assert res == utils.lookup_word("definition", "zxcvbnm")
+
     def test_synonym(self):
         res = "lethargic"
         assert res in utils.lookup_word("synonym", "sleepy")
 
+    def test_not_synonym(self):
+        res = "Invalid word"
+        assert res == utils.lookup_word("synonym", "zxcvbnm")
+
     def test_antonym(self):
         res = "alert"
         assert res in utils.lookup_word("antonym", "sleepy")
+
+    def test_not_antonym(self):
+        res = "Invalid word"
+        assert res == utils.lookup_word("antonym", "zxcvbnm")
