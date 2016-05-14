@@ -41,7 +41,7 @@ def test_shio(mocker):
 def test_definition(mocker):
     fake_definition = 'foo bar'
     mocked_reply_to = mocker.patch('csuibot.handlers.bot.reply_to')
-    mocker.patch('csuibot.handlers.lookup_definition', return_value=fake_definition)
+    mocker.patch('csuibot.handlers.lookup_word', return_value=fake_definition)
     mock_message = Mock(text='/definition school')
     definition(mock_message)
 
@@ -52,7 +52,7 @@ def test_definition(mocker):
 def test_synonym(mocker):
     fake_synonym = 'foo bar'
     mocked_reply_to = mocker.patch('csuibot.handlers.bot.reply_to')
-    mocker.patch('csuibot.handlers.lookup_synonym', return_value=fake_synonym)
+    mocker.patch('csuibot.handlers.lookup_word', return_value=fake_synonym)
     mock_message = Mock(text='/synonym sleepy')
     synonym(mock_message)
 
@@ -63,7 +63,7 @@ def test_synonym(mocker):
 def test_antonym(mocker):
     fake_antonym = 'foo bar'
     mocked_reply_to = mocker.patch('csuibot.handlers.bot.reply_to')
-    mocker.patch('csuibot.handlers.lookup_antonym', return_value=fake_antonym)
+    mocker.patch('csuibot.handlers.lookup_word', return_value=fake_antonym)
     mock_message = Mock(text='/antonym sleepy')
     antonym(mock_message)
 

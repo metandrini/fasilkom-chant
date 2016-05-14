@@ -34,4 +34,4 @@ def webhook():
 
 
 if app.config['APP_ENV'] != 'development':
-    bot.set_webhook(url=webhook_url_base+webhook_url_path)
+    bot.set_webhook()

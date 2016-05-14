@@ -162,3 +162,18 @@ class TestChineseZodiac:
     def test_unknown_zodiac(self):
         years = [2005, 1993, 1981, 1969, 2017, 2029]
         self.run_test('Unknown zodiac', years)
+
+
+class TestWord:
+
+    def test_definition(self):
+        res = "Adjective\n1."
+        assert res in utils.lookup_word("definition", "sleepy")
+
+    def test_synonym(self):
+        res = "lethargic"
+        assert res in utils.lookup_word("synonym", "sleepy")
+
+    def test_antonym(self):
+        res = "alert"
+        assert res in utils.lookup_word("antonym", "sleepy")

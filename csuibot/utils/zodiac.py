@@ -121,7 +121,8 @@ class Dict:
     def lookup(self):
         try:
             fin = ''
-            for syn in self.mean: fin += syn + " "
+            for syn in self.mean:
+                fin += syn + " "
             return fin
         except TypeError:
             return "Invalid word"
