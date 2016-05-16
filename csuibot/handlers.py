@@ -26,17 +26,17 @@ def _is_shio_command(message):
 
 
 def _is_definition_command(message):
-    regexp = r'/definition \S*'
+    regexp = r'/definition \S+'
     return re.match(regexp, message.text) is not None
 
 
 def _is_synonym_command(message):
-    regexp = r'/synonym \S*'
+    regexp = r'/synonym \S+'
     return re.match(regexp, message.text) is not None
 
 
 def _is_antonym_command(message):
-    regexp = r'/antonym \S*'
+    regexp = r'/antonym \S+'
     return re.match(regexp, message.text) is not None
 
 
